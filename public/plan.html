@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/plan.css">
+    <title>Add Plan</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="./index.html">Tour Planner</a></h1>
+    </header>
+
+    <div class="add-plan">
+        <form id="add-Plan-id">
+            <label for="start-date">What day you having the plan?</label>
+            <!-- <input id="start-date" class="date-input" placeholder="Pick a date" /> -->
+            <input type="date" id="start-date" class="date-input" placeholder="Pick a date">
+            
+
+
+            <label for="plan">What's the plan?</label>
+            <input type="text" name="plan-title" id="plan" placeholder="i.e. Shopping">
+
+            <label for="activity">What's your plan activity?</label>
+            <textarea id="activity" rows="4" cols="50"
+                placeholder="i.e. Shopping in Glodok with local Friends"></textarea>
+
+            <input type="submit" value="Add Plan">
+        </form>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="container-h2">
+                <h2>Plan Timeline</h2>
+            </div>
+
+            <!-- here the timeline begins -->
+            <div class="box">
+                <ul class="timeline">
+                  
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./scripts/public/scripts/plan-bundle.js"></script>
+</body>
+
+</html>

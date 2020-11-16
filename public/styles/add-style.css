@@ -1,0 +1,176 @@
+html {
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    background: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* header */
+header {
+    background: #1abc9c;
+    color: rgb(236, 236, 236);
+
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    word-spacing: 0.5em;
+
+    text-shadow: 2px 2px #6f817b;
+
+}
+
+header h1 a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* for the form */
+label {
+    font-size: 1.2rem;
+}
+
+input[type=text],
+#start-date,
+#end-date {
+    font-size: 1rem;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #1abc9c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    transition: background-color 0.5s, font-size 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: #1db395;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 750px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/* START of the drop area */
+.drop-zone {
+    max-width: 100%;
+    height: 300px;
+    padding: 25px;
+
+    /* put the inside text center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*if it goes 2 line, it will also be centered*/
+    text-align: center;
+
+    cursor: pointer;
+    /* color: #ccc; */
+    border: 4px dashed #1abc9c;
+
+    margin-bottom: 25px;
+}
+
+/* when the image is dropped 
+we wanna change the relevant styles
+to indicate that the user
+dropped the image in right place */
+.drop-zone--over {
+    border-style: solid;
+
+    /* thumbnail style */
+
+}
+
+/* hide the input */
+.drop-zone__input {
+    display: none;
+}
+
+.drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-color: #ccc;
+    background-size: cover;
+
+    /* for positioning our label */
+    position: relative;
+}
+
+/* this is to set up the label under the 
+thumbnail */
+.drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+
+    /* put the label at the bottom left corner */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #f2f2f2;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+/* END of the drop area */
+/* ---------- */
+
+/* Now styling the litepicker */
+/* #date-range-picker {
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+} */
+
+#start-date,
+#end-date {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+}

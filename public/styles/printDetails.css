@@ -1,0 +1,399 @@
+html {
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    background: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* header */
+header {
+    background: #1abc9c;
+    color: rgb(236, 236, 236);
+
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    word-spacing: 0.5em;
+
+    text-shadow: 2px 2px #6f817b;
+
+}
+
+header h1 a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* table code starts here */
+
+.content-table {
+    border-collapse: collapse;
+    margin: 75px auto;
+    font-size: 1.2em;
+    max-width: 1350px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+
+    margin-bottom: 700px;
+}
+
+
+
+
+.content-table thead tr {
+    background-color: #1abc9c;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* End of table style here */
+
+/* Two column layout for timeline and packings */
+.row {
+    display: flex;
+    max-width: 1050px;
+    /*centering*/
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    /* margin-top: 450px; */
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+
+    margin: 10px;
+    padding: 10px;
+    /* height: 300px; */
+    /* Should be removed. Only for demonstration */
+}
+
+.container-h2 {
+    /* background: #1abc9c; */
+    background: #e91e63;
+    text-align: center;
+}
+
+.column h2 {
+    color: #caf8ef;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+/* code for timeline starts here */
+.box {
+    padding: 40px;
+    /* background: #052152; */
+    background: #148f77;
+}
+
+.box .timeline {
+    margin: 0;
+    padding: 0;
+    /* border-left: 2px solid #020c1d; */
+    border-left: 2px solid #3ee4c4;
+}
+
+.box .timeline li {
+    list-style: none;
+}
+
+/* give each item(div inside the ul) some space from the ul border and other item below */
+.box .timeline li .item {
+    position: relative;
+    padding: 30px 20px;
+}
+
+.box .timeline li .item:hover {
+    /* background: #041940; */
+    background: #117964;
+}
+
+.box .timeline li .item:before {
+    content: '';
+    position: absolute;
+    top: 34px;
+    left: -7px;
+    width: 12px;
+    height: 12px;
+    /* background: #007faf; */
+    background: #bc1a3a;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.box .timeline li .item:hover:before {
+    background-color: #0F0;
+
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    box-shadow: 0px 0px 10px 2px #0F0;
+}
+
+.box .timeline li .item span {
+    /* give the text some room */
+    padding: 4px 12px;
+
+    /* background: #007faf; */
+    background: #1dd2af;
+    border-radius: 15px;
+    /* color: #fff; */
+    color: rgb(246, 242, 242);
+    text-shadow: 1px 1px #6f817b;
+}
+
+.box .timeline li .item:hover span {
+    background: #e91e63;
+}
+
+.box .timeline li .item h3,
+.box .timeline li .item p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.box .timeline li .item h3 {
+    /* color: #007faf; */
+    color: #1dd2af;
+    text-shadow: 2px 2px #6f817b;
+}
+
+.box .timeline li .item:hover h3 {
+    color: #ff0;
+}
+
+.box .timeline li .item p {
+    color: #fff;
+}
+
+/******************
+color combination is 
+created from colorhexa.com
+***************/
+
+/*End of timeline style*/
+
+/*Start of things to type*/
+.col-header {
+    background: #e91e63;
+    text-align: center;
+}
+
+.col-body {
+    background: #1abc9c;
+    padding: 40px;
+}
+
+.packing {
+    background: #148f77;
+    /* background: #fff; */
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.packing-header {
+    background: #146d5b;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.packing-header h3 {
+    color: #fff;
+    /* color: #fff; */
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.packing-header p {
+    /* color: #fff; */
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.packing-body {
+    background: #108f75;
+    color: #fff;
+}
+
+.pack-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.packing-body input[type="text"] {
+    max-width: 75%;
+    border: 0;
+    background: transparent;
+    /* color: #fff; */
+    color: #fff;
+    border-bottom: 1px solid currentColor;
+    border-radius: 0;
+    padding: 10px;
+    margin-left: 20px;
+    transition: border-bottom 200ms ease-in;
+
+    order: 2;
+}
+
+.packing-body input[type="text"]:focus {
+    border-bottom-width: 3px;
+}
+
+.packing-body input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.packing-body input[type="text"]:focus::placeholder {
+    color: #fff;
+    opacity: 0.25;
+}
+
+.btn-add {
+    margin: 0;
+    margin-left: 15px;
+    margin-right: -15px;
+    border: 0;
+    padding: 0;
+    background: none;
+
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #caf8ef;
+
+}
+
+.btn-add:hover,
+.btn-add:focus {
+    font-size: 1.8rem;
+    color: #ecfcf9;
+}
+
+
+.items {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+}
+
+/* hide the default checkbox and create a custom one */
+
+input[type="checkbox"] {
+    opacity: 0;
+
+    /* take it out of the flow */
+    position: absolute;
+}
+
+.item label {
+    display: flex;
+    align-items: center;
+}
+
+/* creating the custom checkbox */
+.custom-checkbox {
+    content: "";
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+    cursor: pointer;
+
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+}
+
+.items .item {
+    position: relative;
+    padding: 10px;
+}
+
+/* add the grey underline after each item*/
+.items .item::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    right: 0;
+    left: 0;
+    top: 2.1em;
+    bottom: -25px;
+    background: white;
+    opacity: 0.5;
+}
+
+/* hovering over the item */
+/* should make psuedo checkbox larger */
+.items .item:hover .custom-checkbox,
+input[type="checkbox"]:focus+label .custom-checkbox {
+    transform: scale(1.2);
+}
+
+
+/* generate pdf button */
+button {
+    width: 7%;
+    background-color: #1abc9c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    transition: background-color 0.5s, font-size 0.3s;
+
+    margin-left: 0;
+}
+
+button:hover {
+    background-color: #1db395;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}

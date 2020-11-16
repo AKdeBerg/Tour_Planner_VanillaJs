@@ -1,0 +1,201 @@
+html {
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    background: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* header */
+header {
+    background: #1abc9c;
+    color: rgb(236, 236, 236);
+
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    word-spacing: 0.5em;
+
+    text-shadow: 2px 2px #6f817b;
+}
+
+header h1 a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* search box */
+.searchContainer {
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    position: relative;
+    border: 1.5px solid #1abc9c;
+    border-radius: 7px;
+    overflow: hidden;
+
+    margin: 0 auto;
+    /*5px 0 10px */
+
+}
+
+.searchIcon {
+    padding: 0.5rem;
+    color: #1abc9c;
+}
+
+.searchBox {
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+
+    font-size: 0.8rem;
+}
+
+.searchBox:focus,
+button:focus {
+    outline: none;
+}
+
+/*bring the tour container in the middle*/
+.tour-container {
+    margin: 0 auto;
+    max-width: 750px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* tour image and title */
+.tour-img-title-container {
+    display: flex;
+    flex-direction: row;
+
+
+    margin-top: 10px;
+    /* margin-bottom: 15px; */
+    background: rgb(236, 236, 236);
+    border-radius: 10px;
+
+    /* border: 1px solid red; */
+}
+
+.title {
+    color: #1abc9c;
+}
+
+.tour-title>a {
+    text-decoration: none;
+    color: #11d4ad;
+    font-weight: 400;
+    /* text-shadow: 2px 2px #9ba09b; */
+}
+
+.title h2 {
+    border-bottom: 1px solid #1abc9c;
+    padding: 0 0 8px;
+    font-weight: 300;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    color: rgb(115, 134, 115);
+    font-size: 0.8rem;
+}
+
+.tour-duration {
+    padding-left: 60px;
+}
+
+
+.actions li {
+    display: inline-block;
+    letter-spacing: normal;
+    border-left: 1px solid rgb(155, 168, 145);
+}
+
+.actions li:first-child {
+    border: none;
+}
+
+.actions li a {
+    display: block;
+    padding: .25rem;
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+.tour-img-title-container img {
+    width: 175px;
+    height: 195px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.add-tour {
+    margin-top: 10px;
+    max-width: 150px;
+    background: #1abc9c;
+    border: none;
+    /* border-bottom: 2px solid #396684; */
+    color: rgb(239, 240, 239);
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .4rem;
+    /* transition: background .3s ease; */
+
+    border-radius: 8px;
+    text-shadow: 1px 1px #6f817b;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.5s, font-size 0.3s;
+}
+
+button:hover {
+    background-color: #1db395;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.empty-message {
+    margin: 20px;
+    height: 750px;
+    width: 1430px;
+    background-image: url("./img/noTour.jpg");
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+/****************************START of edit.html******************************/

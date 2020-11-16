@@ -1,0 +1,34 @@
+{
+  "name": "tp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add-tour.js",
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "webpack --open --mode=development",
+    "dev-server": "webpack-dev-server --open --mode=development",
+    "build": "webpack --open --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "firebase": "^7.24.0",
+    "litepicker": "^1.5.7",
+    "moment": "^2.29.1",
+    "uuid": "^8.3.0"
+  }
+}

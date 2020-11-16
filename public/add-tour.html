@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/js/main.js"></script>
+    <!-- under is test -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/css/style.css"></script>  -->
+    <link rel="stylesheet" href="./styles/add-style.css">
+    <title>Edit Tour Plan</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="./index.html">Tour Planner</a></h1>
+    </header>
+
+    <div class="form">
+        <form id="add-tour">
+            <label for="tour_name">Tour Name</label>
+            <input type="text" name="" id="tour_name" placeholder="i.e. Jakarta Tour">
+
+            <label for="tour_description">Tour Description</label>
+            <input type="text" name="" id="tour_description" placeholder="i.e. Awesome tour with some local friends">
+
+            <!--START drag and drop new section -->
+            <div class="drop-zone">
+                <span class="drop-zone__promt">Drop Image or Click to Upload</span>
+
+                <!-- thumbnail is gonna generated from Js -->
+                <!-- <div class="drop-zone__thumb" data-label="mytext.txt"> -->
+                <!-- </div> -->
+                <input type="file" name="myFile" class="drop-zone__input" accept="image/*">
+            </div>
+            <!--END drag and drop new section -->
+
+            <!-- For date range use: Litepicker -->
+            <label for="start-date">Tour Start Date</label>
+            <!-- <input id="date-range-picker" placeholder="Start Date - End Date" /> -->
+            <input type="date" id="start-date">
+
+
+            <label for="date-range-picker">Tour End Date</label>
+            <!-- <input id="date-range-picker" placeholder="Start Date - End Date" /> -->
+            <input type="date" id="end-date">
+            
+            <input type="submit" value="Save">
+        </form>
+    </div>
+
+    
+    <script src="/public/scripts/addTour-bundle.js"></script>
+</body>
+
+</html>

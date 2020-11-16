@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/printDetails.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <title>Print Details</title>
+</head>
+<body>
+    <header>
+      <h1><a href="./index.html" class="nostyle">Tour Planner</a></h1>
+    </header>
+
+    <button type="button" id="pdfButton">Generate PDF</button>
+
+    <table class="content-table">    
+      <thead>
+        <tr>
+          <th>Row Name</th>
+          <th>Row Value</th>            
+        </tr>
+      </thead>
+      <!-- dynamic part starts here -->
+      <tbody id="tbody">
+        <!-- <tr>
+          <td>Tour Name</td>
+          <td>Berlin Tour</td>
+        </tr>
+        <tr>
+          <td>Tour Description</td>
+          <td>Blah blah blah Blah blah blah Blah blah blah</td>     
+        </tr> -->
+      </tbody>
+  </table>
+    
+
+  <!-- for html2pdf page break -->
+  <!-- <div class="html2pdf__page-break"></div> -->
+    <!-- Code for plan timeline starts here -->
+     <div class="row">
+        <div class="column">
+          <!--
+            <div class="container-h2">
+                <h2>Plan Timeline</h2>
+            </div>
+
+            
+            <div class="box">
+              <ul class="timeline">                  
+              </ul>
+          </div>
+          -->
+           
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    <script src="./scripts/public/scripts/printDetails-bundle.js"></script>
+</body>
+</html>
