@@ -20,14 +20,14 @@ import "firebase/firestore";
 // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBO7K5c9TreKlZCSsLWu6cLYAQRzrTYmL8",
-    authDomain: "tour-planner-vanillajs.firebaseapp.com",
-    databaseURL: "https://tour-planner-vanillajs.firebaseio.com",
+    apiKey: ##AddOwnKey,
+    authDomain: ##Secret,
+    databaseURL: ##Confidential,
     projectId: "tour-planner-vanillajs",
     storageBucket: "tour-planner-vanillajs.appspot.com",
-    messagingSenderId: "804917545267",
-    appId: "1:804917545267:web:ccb668971d4fdecfb99646",
-    measurementId: "G-L6PVWPWJTF"
+    messagingSenderId: ##AddOwnId,
+    appId: ##AddOwnId,
+    measurementId: ##AddOwnId"
 };
   
 // Initialize Firebase
